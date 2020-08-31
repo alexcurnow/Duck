@@ -6,6 +6,15 @@ namespace Duck
   {
     public IFlyBehavior flyBehavior;
     public IQuackBehavior quackBehavior;
+    public void setFlyBehavior(IFlyBehavior fb)
+    {
+      flyBehavior = fb;
+    }
+
+    public void setQuakBehavior(IQuackBehavior qb)
+    {
+      quackBehavior = qb;
+    }
     public abstract void display();
     public void performFly()
     {
